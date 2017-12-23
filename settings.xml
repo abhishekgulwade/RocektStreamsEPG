@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings>
+    <!-- General -->
+    <category id="general" label="32010">
+        <setting id="debug" type="bool" label="32100" default="false"/>
+        <setting id="offset1hr" type="bool" label="32101" default="false"/>
+        <setting id="install_keyboard_file" type="bool" label="32102" default="true"/>
+
+      		<setting id="enable_scheduler" type="bool" label="30060" default="true" enable="true"/>
+      		<setting id="schedule_interval" type="enum" label="30061" lvalues="30079|30072|30073|30074|30075" default="1" enable="eq(-1,true)"/>
+      		<setting id="schedule_time" type="labelenum" label="30062" values="00:00|01:00|02:00|03:00|04:00|05:00|06:00|07:00|08:00|09:00|10:00|11:00|12:00|13:00|14:00|15:00|16:00|17:00|18:00|19:00|20:00|21:00|22:00|23:00" default="02:00" visible="!eq(-1,4)"  enable="eq(-2,true)"/>
+      		<setting id="day_of_week" type="enum" label="30063" lvalues="30065|30066|30067|30068|30069|30070|30071" default="0" visible="eq(-2,2)"  enable="eq(-3,true)"/>
+      		<setting id="cron_schedule" type="text" label="30064" default="0 0 * * *" visible="eq(-3,4)"  enable="eq(-4,true)"/>
+    </category>
+    <category id="Groups" label="40000">
+        <setting id="USA" type="bool" label="40001" default="true"/>
+        <setting id="SPORTS" type="bool" label="40002" default="true"/>
+        <setting id="MOVIE CH/HBO PPV" type="bool" label="40003" default="true"/>
+        <setting id="KIDS" type="bool" label="40004" default="true"/>
+        <setting id="CRICKET" type="bool" label="40005" default="true"/>
+        <setting id="HINDI" type="bool" label="40006" default="true"/>
+        <setting id="PUNJABI" type="bool" label="40007" default="true"/>
+        <setting id="MALAYALAM" type="bool" label="40008" default="false"/>
+        <setting id="TELUGU" type="bool" label="40010" default="false"/>
+        <setting id="POLISH" type="bool" label="40011" default="false"/>
+        <setting id="PORTUGUESE" type="bool" label="40012" default="false"/>
+        <setting id="BRASIL" type="bool" label="40013" default="false"/>
+        <setting id="MARATHI" type="bool" label="40014" default="true"/>
+        <setting id="SPANISH" type="bool" label="40015" default="false"/>
+        <setting id="GUJARATI" type="bool" label="40016" default="false"/>
+        <setting id="SERBIA" type="bool" label="40017" default="false"/>
+        <setting id="ARABIC" type="bool" label="40018" default="false"/>
+        <setting id="FILIPINO" type="bool" label="40019" default="false"/>
+        <setting id="BANGLA" type="bool" label="40020" default="false"/>
+        <setting id="SINHALA" type="bool" label="40021" default="false"/>
+        <setting id="PAKISTANI" type="bool" label="40022" default="false"/>
+        <setting id="AFGHANISTAN" type="bool" label="40023" default="false"/>
+        <setting id="KANNADA" type="bool" label="40024" default="false"/>
+        <setting id="TAMIL" type="bool" label="40025" default="false"/>
+        <setting id="NEPALI" type="bool" label="40026" default="false"/>
+        <setting id="AFRICAN" type="bool" label="40027" default="false"/>
+        <setting id="ITALY" type="bool" label="40028" default="false"/>
+        <setting id="CARRIBEAN" type="bool" label="40029" default="false"/>
+        <setting id="GREECE" type="bool" label="40030" default="false"/>
+        <setting id="ROMANIAN" type="bool" label="40031" default="false"/>
+        <setting id="CZ&SLOVAK" type="bool" label="40032" default="false"/>
+        <setting id="FOR ADULTS" type="bool" label="40033" default="true"/>
+        <setting id="UK" type="bool" label="40034" default="true"/>
+        <setting id="CAN" type="bool" label="40035" default="true"/>
+        <setting id="NFL" type="bool" label="40036" default="true"/>
+        <setting id="RUSSIA/UKRAINE" type="bool" label="40037" default="true"/>
+        <setting id="TEST" type="bool" label="40038" default="true"/>
+    </category>
+
+</settings>
